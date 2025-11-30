@@ -30,9 +30,9 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full flex justify-center">
+    <header className="fixed top-6 z-50 w-full flex justify-center">
       {/* Inner container: 85% width, rounded, shadow */}
-      <div className="md:w-[65%] w-[85%] mt-6 p-3.5 flex justify-between items-center bg-gradient-to-r from-blue-900/30 to-pink-900/20 backdrop-blur-md rounded-4xl shadow-lg text-white relative">
+      <div className="md:w-[65%] w-[90%] p-3.5 flex justify-between items-center bg-gradient-to-r from-blue-900/30 to-pink-900/20 backdrop-blur-md rounded-4xl shadow-lg text-white relative">
         {/* Left: profile image */}
         <div className="flex items-center gap-3">
           <Image
@@ -74,15 +74,19 @@ export default function Header() {
 
         {/* Right icons */}
         <nav className="flex items-center gap-3">
-          <Link href="#git" className="px-2 hover:underline">
+          <Link href="https://github.com/UsmanAli-1" className="px-2 hover:underline">
             <FontAwesomeIcon icon={faGit} style={{ width: 18 }} />
           </Link>
-          <Link href="#linkedin" className="px-2 hover:underline">
+          <Link href="https://www.linkedin.com/in/usman-ali-84829130a/" className="px-2 hover:underline">
             <FontAwesomeIcon icon={faLinkedinIn} style={{ width: 14 }} />
           </Link>
-          <Link href="#email" className="px-2 hover:underline">
-            <FontAwesomeIcon icon={faEnvelope} style={{ width: 14 }} />
-          </Link>
+
+          <a
+            href="mailto:usmanali0044444@gmail.com?subject=Hello&body=Hi,%20I%20want%20to%20collaborate"
+            className="inline-flex items-center justify-center px-3 py-2 hover:underline cursor-pointer"
+          >
+            <FontAwesomeIcon icon={faEnvelope} style={{ width: 16 }} />
+          </a>
           <Link href="#switch" className="px-4 hover:underline">
             <FontAwesomeIcon icon={faMoon} style={{ width: 14 }} />
           </Link>
@@ -112,7 +116,7 @@ export default function Header() {
                 return (
                   <Link key={item.href} href={item.href}>
                     <div className={`flex items-center gap-2 ml-4 px-3 relative group  p-2 rounded-md 
-                      ${isActive ? "w-71 bg-blue-900/20 " : "w-0 bg-slate-950"}
+                      ${isActive ? "w-76 bg-blue-900/20 " : "w-0 bg-slate-950"}
                       `} >
                       <FontAwesomeIcon
                         icon={item.icon}

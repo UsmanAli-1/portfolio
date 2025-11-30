@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default function CenteredIntroAndJourney() {
     return (
         // 1. Single Root Element (Div to wrap both cards and add vertical spacing)
-        <div className="w-full max-w-3xl mx-auto space-y-8 mt-12">
+        <div className="w-full max-w-3xl px-4 md:mx-auto space-y-8 mt-12 ">
 
             {/* === CARD 1: Introduction === */}
             <Card className="shadow-xl bg-gray-100/5 backdrop-blur-md border border-gray-700 
@@ -64,6 +64,7 @@ export default function CenteredIntroAndJourney() {
                             border-l-8 border-l-white mt-12
                             transition-all duration-300 ease-in-out
                     hover:scale-[1.02]
+                    
                 ">
                 <CardContent className="space-y-2  ">
 

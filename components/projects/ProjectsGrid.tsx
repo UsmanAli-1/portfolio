@@ -55,14 +55,14 @@ export default function ProjectsGrid() {
     ];
 
     return (
-        <section className="w-full py-13  backdrop-blur-lg mt-19"
-        style={{backgroundImage: " conic-gradient(at top right, #09021aff 0%, #3f1736ff 10%, #100D2F 66%, #020220ff 100%)"
-
-        }}
+        <section className="w-full py-8 md:py-13  backdrop-blur-lg mt-16 md:mt-19"
+            style={{
+                backgroundImage: " conic-gradient(at top right, #09021aff 0%, #3f1736ff 10%, #100D2F 66%, #020220ff 100%)"
+            }}
         >
             <div className="md:w-[92%] w-[90%] mx-auto">
                 {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                     {projects.map((proj, i) => (
                         <Card key={i} className="bg-[#0F172B] backdrop-blur-xl text-white border-white/20 shadow-xl py-0 pb-4 
                          transform transition-all duration-300 hover:-translate-y-4
@@ -76,7 +76,7 @@ export default function ProjectsGrid() {
                                     fill
                                     className="object-cover rounded-t-lg"
                                 />
-                                 <div className="absolute inset-0  hover:bg-black/50 transition-all duration-300 rounded-t-lg"></div>
+                                <div className="absolute inset-0  hover:bg-black/50 transition-all duration-300 rounded-t-lg"></div>
                             </div>
 
                             <CardHeader className="min-h-[100px]">
@@ -95,7 +95,7 @@ export default function ProjectsGrid() {
                             </CardContent>
 
                             <CardFooter>
-                                <Button asChild className="w-full bg-gradient-to-r from-purple-500/50 to-blue-600/90 hover:bg-purple-700 text-black/60 my-4
+                                <Button asChild className="w-full bg-gradient-to-r from-purple-500/60 to-blue-600/90 hover:bg-purple-700 text-black/60 my-4
                                     transform transformation-all duration-300 hover:scale-105
                                 ">
                                     <a href={proj.link} target="_blank">

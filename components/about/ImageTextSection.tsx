@@ -9,6 +9,7 @@ export default function ImageTextSection() {
 
                 {/* === MAIN LAYOUT CONTAINER - ADJUSTED ALIGNMENT === */}
                 <div className="
+                    mb-13
                     flex flex-col md:flex-row 
                     items-center md:items-start 
                     gap-4 md:gap-8 p-4 w-full
@@ -16,23 +17,24 @@ export default function ImageTextSection() {
                 ">
 
                     {/* 1. TEXT (LEFT SIDE) */}
-                    <div className="w-full md:w-1/2 text-center md:text-left">
+                    <div className="w-full md:w-1/2 text-left mb-10 ">
                         <div className="space-y-1">
-                            <p className="text-4xl font-bold mb-0 text-white">Hi There! 👋</p>
-                            <h1 className="text-5xl font-semibold mt-0 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">I AM USMAN <br></br>ALI</h1>
+                            <p className="text-3xl md:text-4xl font-bold mb-0 text-white">Hi There! 👋</p>
+                            <h1 className="text-4xl  md:text-5xl font-semibold mt-0 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">I AM USMAN <br></br>ALI</h1>
                         </div>
-                        <h4 className="text-3xl font-semibold mt-4 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">Software Developer </h4>
-                        {/* <Button className="" variant="default">click</Button> */}
+                        <h4 className="text-2xl md:text-3xl font-semibold mt-2 md:mt-4 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">Software Developer </h4>
                     </div>
 
                     {/* 2. IMAGE (RIGHT SIDE) */}
-                    <div className=" rounded-full shadow-xl shadow-white/15" >
+                    <div className="w-55 h-55 md:mr-22 rounded-full shadow-[0_0_40px_10px_rgba(180,0,255,0.4)] 
+                    flex items-center justify-center overflow-hidden  mb-25 md:mb-0">
                         <img
                             src="/profile.avif"
                             alt="Usman Ali Profile"
-                            className="w-60 max-w-sm rounded-full object-cover "
+                            className="w-full h-full object-cover rounded-full"
                         />
                     </div>
+
 
                 </div>
             </CardContent>

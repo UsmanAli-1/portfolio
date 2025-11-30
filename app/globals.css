@@ -184,7 +184,7 @@ html, body {
   border-radius: 9999px;
   background: radial-gradient(
     circle,
-    rgba(62, 89, 255, 0.55) 30%,
+    rgba(62, 89, 255, 0.55) 40%,
     rgba(62, 89, 255, 0) 60%
   );
   filter: blur(120px);
@@ -207,8 +207,8 @@ html, body {
   left: -10rem;
     background: radial-gradient(
     circle,
-    rgba(62, 89, 255, 0.55) 0%,
-    rgba(62, 89, 255, 0) 0%
+    rgba(62, 89, 255, 0.55) 70%,
+    rgba(62, 89, 255, 0) 50%
   );
 }
 
