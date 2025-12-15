@@ -21,7 +21,7 @@ export default function Home() {
 
       <div className=" h-1/3 text-center text-white px-4  pb-4 md:pb-0">
         {/* Heading */}
-        <div className="text-2xl w-3/5 pt-0  mx-auto font-extrabold text-[#8596FF] md:text-7xl md:mt-20">
+        <div className="text-2xl w-4/5 pt-7  mx-auto font-extrabold text-[#8596FF] md:text-7xl md:mt-10">
           Full Stack Developer
         </div>
 
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="w-[300px] text-base text-white/60 leading-relaxed 
                 mx-auto mt-4
                 md:w-auto md:text-2xl md:mt-8 md:max-w-3xl">
-          Crafting modern web and mobile experiences with MERN, Python, Django, and Flutter
+          Crafting modern web and Saas experiences with MENN, Python, and Php
         </div>
 
 
@@ -88,7 +88,7 @@ export default function Home() {
             hover:border-white/40 hover:bg-white/7 hover:scale-105 transition-all duration-300
              ">
               <FontAwesomeIcon icon={faLayerGroup} className="text-3xl mb-4" />
-              <h3 className="text-xl font-semibold mb-2">MERN Stack</h3>
+              <h3 className="text-xl font-semibold mb-2">MENN Stack</h3>
               <p className="text-white/60 text-md font-extralight">Full-stack javascript development with MongoDB , Express, React , and  Node.js.</p>
             </div>
 
@@ -106,8 +106,8 @@ export default function Home() {
             hover:border-white/40 hover:bg-white/7 hover:scale-105 transition-all duration-300
             ">
               <FontAwesomeIcon icon={faMobileScreen} className="text-3xl mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Flutter</h3>
-              <p className="text-white/60 text-md font-extralight">Cross-platform mobile application with Flutter.</p>
+              <h3 className="text-xl font-semibold mb-2">Php & jQuery</h3>
+              <p className="text-white/60 text-md font-extralight">Handle backend with php and jQuery.</p>
             </div>
 
             {/* Card 4 */}

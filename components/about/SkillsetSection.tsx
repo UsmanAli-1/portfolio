@@ -3,12 +3,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faPython, faPhp, faGitAlt, faWordpress, faUbuntu,
-    faFlutter, faAndroid, faDocker, faLinux
+    faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faPython, faPhp, faGitAlt, faUbuntu
+    , faAndroid, faDocker, faLinux  
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faDatabase, faServer, faTerminal, faCloud, faCode
-} from '@fortawesome/free-solid-svg-icons'; // For SQL, Mongo, etc.
+} from '@fortawesome/free-solid-svg-icons'; 
+
+
 
 const skillData = [
     // Frontend
@@ -16,28 +18,27 @@ const skillData = [
     { icon: faCss3Alt },
     { icon: faJs },
     { icon: faReact },
-    { icon: faCode }, // faCode from free-solid-svg-icons
-    { icon: faCss3Alt },
-    { icon: faFlutter },
-    { icon: faUbuntu },
-
+    // { icon: faJquery },
+    
+    
     // Backend
     { icon: faNodeJs },
     { icon: faPython },
     { icon: faPhp },
-    { icon: faServer }, // faServer from free-solid-svg-icons
+    { icon: faCode },
+    { icon: faUbuntu },
+    { icon: faServer }, 
 
     // Databases
-    { icon: faDatabase }, // faDatabase from free-solid-svg-icons
+    { icon: faDatabase }, 
 
     // Tools & Others
     { icon: faGitAlt },
-    { icon: faCloud }, // faCloud for generic cloud/container
-    { icon: faWordpress },
+    { icon: faCloud }, 
 ];
 
 const toolUse = [
-    { icon: faAndroid },
+    // { icon: faAndroid },
     { icon: faDocker },
     { icon: faLinux },
     { icon: faTerminal }

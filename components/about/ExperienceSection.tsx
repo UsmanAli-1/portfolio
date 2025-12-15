@@ -4,24 +4,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const experienceData = [
   {
+    title: " Full Stack Dev",
+    company: "TechMorph Innovation",
+    duration: "2025 - Present",
+  },
+  {
     title: "Software Developer",
-    company: "Techanzy Limited",
-    duration: "2023 - Present",
+    company: "Core Digitals ",
+    duration: "2025 - 2025",
   },
   {
-    title: "Freelance Full Stack Dev",
-    company: "Various Clients",
-    duration: "2022 - 2023",
-  },
-  {
-    title: "Junior Web Developer",
-    company: "Tech Solutions Co.",
-    duration: "2021 - 2022",
+    title: " Web Developer",
+    company: "Ayan Tech",
+    duration: "2023 - 2024",
   },
   {
     title: "Intern Web Development",
-    company: "University Lab",
-    duration: "2020 - 2021",
+    company: "University Labs",
+    duration: "2022 - 2025",
   },
 ];
 
@@ -52,12 +52,12 @@ export default function ExperienceSection() {
 
                 <div
                   key={index}
-                  className="flex flex-col items-center flex-shrink-0 w-55 md:w-57 pl-2" // w-60/w-72 defines the width of each card
+                  className="flex flex-col items-center flex-shrink-0 w-55 md:w-63 pl-2" // w-60/w-72 defines the width of each card
                 >
 
                   {/* Experience Card (small card) */}
                   <Card className="w-full h-full py-2  gap-0 bg-gray-100/5 backdrop-blur-md border border-gray-500 shadow-xl transition 
-                transition-all duration-300 ease-in-out
+                transition-all duration-300 ease-in-out 
                 hover:scale-[1.04] 
                 ">
                     <CardHeader className="justify-center">

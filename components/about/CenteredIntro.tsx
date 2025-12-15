@@ -16,7 +16,7 @@ export default function CenteredIntroAndJourney() {
                         Hi Everyone, I am <strong>Usman Ali</strong> from Karachi, Pakistan.
                     </p>
                     <p className="text-lg text-center text-white">
-                        I am currently Employed at <strong>Core Digital</strong>.
+                        I am currently Employed at <strong>TechMorph Innovation</strong>.
                     </p>
                     <p className="text-lg text-center text-white">
                         I have completed <strong>Computer Science</strong> from Iqra University at Karachi.
@@ -37,18 +37,17 @@ export default function CenteredIntroAndJourney() {
                 </CardHeader>
                 <CardContent className="space-y-4 ">
                     <p className="text-lg text-left text-white">
-                        As a passionate **Full Stack Developer** with <strong>2 years of professional experience</strong>, I specialize in building robust web and mobile applications.
-                        My expertise spans across:
+                        I am a <strong>Junior Full-Stack Developer</strong> with <strong>6 months of experience</strong> and over 1 year of hands-on  <strong>web development experience</strong>, focused on building end-to-end web applications.
                     </p>
                     <ul className="list-disc pl-8 space-y-2 text-white text-lg">
                         <li className="text-left">
-                            **MERN Stack** (MongoDB, Express.js, React, Node.js)
+                            **MENN Stack** (MongoDB, Express.js, Next, Node.js)
                         </li>
                         <li className="text-left">
                             **Python with Django**
                         </li>
                         <li className="text-left">
-                            **Flutter** for cross-platform mobile development
+                            **Php & jQuery** for handling backend using php and jQuery
                         </li>
                     </ul>
                     <p className="text-lg text-left text-white pt-2">

@@ -36,11 +36,11 @@ export default function Header() {
         {/* Left: profile image */}
         <div className="flex items-center gap-3">
           <Image
-            src="/profile.avif"
+            src="/images/pic.jpg"
             width={36}
             height={36}
             alt="My photo"
-            className="rounded-full ml-2"
+            className="rounded-full ml-2 border border-2"
           />
         </div>
 

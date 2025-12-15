@@ -29,9 +29,9 @@ export default function ImageTextSection() {
                     <div className="w-55 h-55 md:mr-22 rounded-full shadow-[0_0_40px_10px_rgba(180,0,255,0.4)] 
                     flex items-center justify-center overflow-hidden  mb-25 md:mb-0">
                         <img
-                            src="/profile.avif"
+                            src="/images/pic.jpg"
                             alt="Usman Ali Profile"
-                            className="w-full h-full object-cover rounded-full"
+                            className="w-full h-full object-cover rounded-full border border-5"
                         />
                     </div>
 
