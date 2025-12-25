@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default function CenteredIntroAndJourney() {
     return (
         // 1. Single Root Element (Div to wrap both cards and add vertical spacing)
-        <div className="w-full max-w-3xl px-4 md:mx-auto space-y-8 mt-12 ">
+        <div className="w-full max-w-3xl px-4 md:mx-auto space-y-8  lg:mt-12 ">
 
             {/* === CARD 1: Introduction === */}
             <Card className="shadow-xl bg-gray-100/5 backdrop-blur-md border border-gray-700 
@@ -16,10 +16,10 @@ export default function CenteredIntroAndJourney() {
                         Hi Everyone, I am <strong>Usman Ali</strong> from Karachi, Pakistan.
                     </p>
                     <p className="text-lg text-center text-white">
-                        I am currently Employed at <strong>TechMorph Innovation</strong>.
+                        A final-year <strong>Computer Science</strong> student at Iqra University at Karachi.
                     </p>
                     <p className="text-lg text-center text-white">
-                        I have completed <strong>Computer Science</strong> from Iqra University at Karachi.
+                        I am currently seeking new opportunities in the tech industry.
                     </p>
                 </CardContent>
             </Card>
@@ -44,10 +44,10 @@ export default function CenteredIntroAndJourney() {
                             **MENN Stack** (MongoDB, Express.js, Next, Node.js)
                         </li>
                         <li className="text-left">
-                            **Python with Django**
+                            **Php & jQuery** for handling backend using php and jQuery
                         </li>
                         <li className="text-left">
-                            **Php & jQuery** for handling backend using php and jQuery
+                            **Python **
                         </li>
                     </ul>
                     <p className="text-lg text-left text-white pt-2">
@@ -55,7 +55,6 @@ export default function CenteredIntroAndJourney() {
                     </p>
                 </CardContent>
             </Card>
-
 
 
             <Card className="shadow-xl bg-gray-100/5 backdrop-blur-md border-0 mb-2

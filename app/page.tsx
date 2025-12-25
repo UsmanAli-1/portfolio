@@ -36,7 +36,7 @@ export default function Home() {
         <div className="w-[300px] text-base text-white/60 leading-relaxed 
                 mx-auto mt-4
                 md:w-auto md:text-2xl md:mt-8 md:max-w-3xl">
-          Crafting modern web and Saas experiences with MENN, Python, and Php
+          Crafting modern web and Saas experiences with MENN, Php , and Python
         </div>
 
 
@@ -89,16 +89,16 @@ export default function Home() {
              ">
               <FontAwesomeIcon icon={faLayerGroup} className="text-3xl mb-4" />
               <h3 className="text-xl font-semibold mb-2">MENN Stack</h3>
-              <p className="text-white/60 text-md font-extralight">Full-stack javascript development with MongoDB , Express, React , and  Node.js.</p>
+              <p className="text-white/60 text-md font-extralight">Full-stack javascript development with MongoDB , Express, Next.js , and  Node.js.</p>
             </div>
 
-            {/* Card 2 */}
-            <div className="border border-white/20 bg-white/2 rounded-xl p-6 bg-transparent backdrop-blur-sm
+            {/* Card 4 */}
+            <div className="border border-white/20 bg-white/2 rounded-xl p-6 bg-transparent backdrop-blur-sm 
             hover:border-white/40 hover:bg-white/7 hover:scale-105 transition-all duration-300
-             ">
-              <FontAwesomeIcon icon={faCode} className="text-3xl mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Python & Django</h3>
-              <p className="text-white/60 text-md font-extralight">Robust backend solutions with Python and Django framework.</p>
+            ">
+              <FontAwesomeIcon icon={faGlobe} className="text-3xl mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Web Development</h3>
+              <p className="text-white/60 text-md font-extralight">Modern , responsive web applications with cutting-edge technologies.</p>
             </div>
 
             {/* Card 3 */}
@@ -110,14 +110,18 @@ export default function Home() {
               <p className="text-white/60 text-md font-extralight">Handle backend with php and jQuery.</p>
             </div>
 
-            {/* Card 4 */}
-            <div className="border border-white/20 bg-white/2 rounded-xl p-6 bg-transparent backdrop-blur-sm 
+
+
+            {/* Card 2 */}
+            <div className="border border-white/20 bg-white/2 rounded-xl p-6 bg-transparent backdrop-blur-sm
             hover:border-white/40 hover:bg-white/7 hover:scale-105 transition-all duration-300
-            ">
-              <FontAwesomeIcon icon={faGlobe} className="text-3xl mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Web Development</h3>
-              <p className="text-white/60 text-md font-extralight">Modern , responsive web applications with cutting-edge technologies.</p>
+             ">
+              <FontAwesomeIcon icon={faCode} className="text-3xl mb-4" />
+              <h3 className="text-xl font-semibold mb-2">Python </h3>
+              <p className="text-white/60 text-md font-extralight">Robust backend solutions with Python .</p>
             </div>
+
+
 
 
           </div>

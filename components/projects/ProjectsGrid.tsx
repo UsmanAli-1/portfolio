@@ -11,6 +11,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function ProjectsGrid() {
     const projects = [
         {
+            title: "Squad Security (In Process)",
+            description: "A Squad International Security Agency website build on Next.js and shadcn showcasing their Services , Clients , and company work to get more ...",
+            image: "/images/projects/squad.png",
+            tech: ["Next.js", "Shadcn", "vercel"],
+            link: "https://squadsecurity.vercel.app/",
+        },
+        {
+            title: "Wearify FYP (In Process)",
+            description: "A Virtual try-on project , its our fyp project and still in process , main tech stack we are using in (MongoDB Atlas , Express.js , Next.js , Node.js) and Python...",
+            image: "/images/projects/wearify.png",
+            tech: ["MENN", "Shadcn", "Python" ,"vercel"],
+            link: "https://wearify-4abq.vercel.app/",
+        },
+        {
             title: "Hire Hunt ",
             description: "A PHP-based recruitment platform enabling HRs to post jobs and applicants to explore and apply seamlessly. Built with PHP, jQuery, HTML, and CSS..",
             image: "/images/projects/hirehunt.png",
@@ -80,13 +94,13 @@ export default function ProjectsGrid() {
                             </div>
 
                             <CardHeader className="min-h-[100px]">
-                                <CardTitle className="text-white text-lg mt-3">{proj.title}</CardTitle>
+                                <CardTitle className="text-white text-lg ">{proj.title}</CardTitle>
                                 <CardDescription className="text-gray-300">
                                     {proj.description}
                                 </CardDescription>
                             </CardHeader>
 
-                            <CardContent className="flex flex-wrap gap-2 mt-4">
+                            <CardContent className="flex flex-wrap gap-2 ">
                                 {proj.tech.map((t, idx) => (
                                     <Badge key={idx} variant="secondary" className="bg-white/10 text-white rounded-md hover:bg-white/20">
                                         {t}
@@ -95,7 +109,7 @@ export default function ProjectsGrid() {
                             </CardContent>
 
                             <CardFooter>
-                                <Button asChild className="w-full bg-gradient-to-r from-purple-500/60 to-blue-600/90 hover:bg-purple-700 text-black/60 my-4
+                                <Button asChild className="w-full bg-gradient-to-r from-purple-500/60 to-blue-600/90 hover:bg-purple-700 text-black/60 my-2
                                     transform transformation-all duration-300 hover:scale-105
                                 ">
                                     <a href={proj.link} target="_blank">

@@ -3,20 +3,25 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const experienceData = [
-  {
-    title: " Full Stack Dev",
-    company: "TechMorph Innovation",
-    duration: "2025 - Present",
-  },
+  // {
+  //   title: " Full Stack Dev",
+  //   company: "TechMorph Innovation",
+  //   duration: "2025 - Present",
+  // },
   {
     title: "Software Developer",
     company: "Core Digitals ",
-    duration: "2025 - 2025",
+    duration: "May 2025 - Nov 2025",
+  },
+    {
+    title: " Frontend Developer",
+    company: "CodeAlpha",
+    duration: "March 2025 - Apr 2025",
   },
   {
     title: " Web Developer",
     company: "Ayan Tech",
-    duration: "2023 - 2024",
+    duration: "Aug 2023 - Jul 2024",
   },
   {
     title: "Intern Web Development",

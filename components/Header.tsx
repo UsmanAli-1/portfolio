@@ -7,10 +7,9 @@ import {
   faCircleQuestion,
   faFolder,
   faEnvelope,
-  faMoon,
 } from "@fortawesome/free-regular-svg-icons";
-import { faGit, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faGit, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faBars, faXmark , faPhone} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -87,9 +86,17 @@ export default function Header() {
           >
             <FontAwesomeIcon icon={faEnvelope} style={{ width: 16 }} />
           </a>
-          <Link href="#switch" className="px-4 hover:underline">
-            <FontAwesomeIcon icon={faMoon} style={{ width: 14 }} />
-          </Link>
+
+          <a href="tel:+923021027619" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faPhone} style={{ width: 14 }} />
+          </a>
+          <a
+            href="https://wa.me/923021027619"
+            rel="noopener noreferrer"
+            className="px-4 hover:underline"
+          >
+            <FontAwesomeIcon icon={faWhatsapp} style={{ width: 14 }} />
+          </a>
 
           {/* Hamburger (mobile) */}
           <button
