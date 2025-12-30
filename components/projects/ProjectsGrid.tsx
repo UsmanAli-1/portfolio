@@ -13,7 +13,7 @@ export default function ProjectsGrid() {
         {
             title: "Squad Security (In Process)",
             description: "A Squad International Security Agency website build on Next.js and shadcn showcasing their Services , Clients , and company work to get more ...",
-            image: "/images/projects/squad.png",
+            image: "/images/projects/sq.png",
             tech: ["Next.js", "Shadcn", "vercel"],
             link: "https://squadsecurity.vercel.app/",
         },
@@ -26,8 +26,8 @@ export default function ProjectsGrid() {
         },
         {
             title: "Hire Hunt ",
-            description: "A PHP-based recruitment platform enabling HRs to post jobs and applicants to explore and apply seamlessly. Built with PHP, jQuery, HTML, and CSS..",
-            image: "/images/projects/hirehunt.png",
+            description: "A PHP-based recruitment platform enabling HRs to post jobs and applicants to explore and apply seamlessly. Admin username & password is usman",
+            image: "/images/projects/hire.png",
             tech: ["Php", "jQuery", "Html", "Css"],
             link: "https://hirehunt.free.nf/",
         },
