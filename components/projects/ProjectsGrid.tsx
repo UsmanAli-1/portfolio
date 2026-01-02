@@ -25,10 +25,10 @@ export default function ProjectsGrid() {
         },
         {
             title: "Wearify FYP (In Process)",
-            description: "A Virtual try-on project , its our fyp project and still in process , main tech stack we are using in (MongoDB Atlas , Express.js , Next.js , Node.js) and Python...",
-            image: "/images/projects/wearify.png",
-            tech: ["MENN", "Shadcn", "Python", "Vercel"],
-            link: "https://wearify-4abq.vercel.app/",
+            description: "A Virtual try-on project , user can signup & signin and get free 120 points , 40 points per image generate , Authentication & Authorization is done ...",
+            image: "/images/projects/werify2.png",
+            tech: ["MENN", "Shadcn", "Python", "Vercel" , "Railway"],
+            link: "https://wearify-mu.vercel.app/",
             video: null,
         },
         {
