@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="/Usman-Ali-FullStack-CV.pdf" 
           download
           className="fixed bottom-6 right-6 w-14 h-14 bg-gradient-to-r from-purple-600 to-blue-600 rounded-full flex items-center justify-center 
-          hover:bg-blue-600/70  z-40"
+          hover:bg-blue-600/70  z-40 hover:scale-110 duration-300 transition"
           title="Download Resume"
         >
           <FontAwesomeIcon icon={faFileAlt} className="text-white text-md" />

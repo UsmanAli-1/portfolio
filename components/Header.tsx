@@ -9,10 +9,10 @@ import {
   faEnvelope,
 } from "@fortawesome/free-regular-svg-icons";
 import { faGit, faLinkedinIn, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faXmark , faPhone} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark, faPhone } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import { motion } from "framer-motion";
 
 
 export default function Header() {
@@ -33,15 +33,26 @@ export default function Header() {
       {/* Inner container: 85% width, rounded, shadow */}
       <div className="md:w-[65%] w-[90%] p-3.5 flex justify-between items-center bg-gradient-to-r from-blue-900/30 to-pink-900/20 backdrop-blur-md rounded-4xl shadow-lg text-white relative">
         {/* Left: profile image */}
-        <div className="flex items-center gap-3">
-          <Image
-            src="/images/pic.jpg"
-            width={36}
-            height={36}
-            alt="My photo"
-            className="rounded-full ml-2 border border-2"
-          />
-        </div>
+        <motion.div
+          animate={{ scale: [1, 1.20, 1] }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        >
+          <div className="flex items-center gap-3 ">
+            <a href="/">
+              <Image
+                src="/images/pic.jpg"
+                width={36}
+                height={36}
+                alt="My photo"
+                className="rounded-full ml-2 border border-2"
+              />
+            </a>
+          </div>
+        </motion.div>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">

@@ -12,6 +12,7 @@ import {
   faMobileScreen,  // Mobile icon
   faArrowRight
 } from "@fortawesome/free-solid-svg-icons";
+import SkullInCircle from "@/components/SkullInCircle";
 
 export default function Home() {
   return (
@@ -19,29 +20,39 @@ export default function Home() {
       <div className="bg-blob-top-right"></div>
       <div className="bg-blob-bottom-left"></div>
 
-      <div className=" h-1/3 text-center text-white px-4  pb-4 md:pb-0">
+      <div className="relative text-center text-white px-4 ">
+
         {/* Heading */}
-        <div className="text-2xl w-4/5 pt-7  mx-auto font-extrabold text-[#8596FF] md:text-7xl md:mt-10">
+        <div className="text-2xl w-4/5 pt-5 mx-auto font-extrabold text-[#8596FF] 
+                md:text-7xl ">
           Full Stack Developer
         </div>
 
-        {/* White div */}
-        <div className="w-50 max-w-[80%] h-50 mx-auto mt-6 
-     md:w-80 md:h-80 md:mt-6 rounded-full overflow-hidden ">
-          <ParticleGlobe />
+        {/* Globe (independent layer) */}
+        <div
+          className="
+    absolute
+    left-1/2
+    top-30           
+    -translate-x-1/2
+    w-[300px] h-[300px]
+    sm:w-[340px] sm:h-[340px]
+    md:w-[420px] md:h-[420px]
+    md:mt-17
+    z-10
+  ">
+          <SkullInCircle />
         </div>
 
 
         {/* Subtext */}
-        <div className="w-[300px] text-base text-white/60 leading-relaxed 
-                mx-auto mt-4
-                md:w-auto md:text-2xl md:mt-8 md:max-w-3xl">
+        <div className="w-[300px] text-base text-white/60 leading-relaxed mx-auto 
+                md:w-auto md:text-2xl md:max-w-3xl md:mt-105 mt-80" >
           Crafting modern web and Saas experiences with MENN, Php , and Python
         </div>
 
-
         {/* Buttons */}
-        <div className="mt-6 flex flex-col gap-4 items-center w-full md:flex-row md:justify-center md:gap-6 md:mt-10 md:mb-6">
+        <div className="mt-6 mb-6 flex flex-col gap-4 items-center w-full md:flex-row md:justify-center md:gap-6 md:mt-10 md:mb-6">
           {/* View My Work */}
           <Button
             asChild

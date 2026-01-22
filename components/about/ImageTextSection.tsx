@@ -1,5 +1,6 @@
+"use client"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-// import { Button } from "./button";
+import { motion } from "framer-motion";
 
 export default function ImageTextSection() {
     return (
@@ -26,15 +27,23 @@ export default function ImageTextSection() {
                     </div>
 
                     {/* 2. IMAGE (RIGHT SIDE) */}
-                    <div className="w-55 h-55 md:mr-22 rounded-full shadow-[0_0_40px_10px_rgba(180,0,255,0.4)] 
-                    flex items-center justify-center overflow-hidden  mb-25 md:mb-0">
-                        <img
-                            src="/images/pic.jpg"
-                            alt="Usman Ali Profile"
-                            className="w-full h-full object-cover rounded-full border border-5"
-                        />
-                    </div>
-
+                    <motion.div
+                        animate={{ scale: [1, 1.10, 1] }}
+                        transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                        }}
+                    >
+                        <div className="w-55 h-55 md:mr-22 rounded-full shadow-[0_0_40px_10px_rgba(180,0,255,0.4)] 
+                    flex items-center justify-center overflow-hidden  mb-25 md:mb-0 hover:scale-110 duration-300 transition">
+                            <img
+                                src="/images/pic.jpg"
+                                alt="Usman Ali Profile"
+                                className="w-full h-full object-cover rounded-full border border-5 z-10"
+                            />
+                        </div>
+                    </motion.div>
 
                 </div>
             </CardContent>

@@ -32,7 +32,7 @@ const experienceData = [
 
 export default function ExperienceSection() {
   return (
-    <div className="px-8">
+    <div className="px-8 hover:scale-105 duration-300 transition">
 
       <Card className="w-full max-w-4xl mx-auto mt-12  
     shadow-xl bg-gray-100/5 backdrop-blur-md border border-gray-700
