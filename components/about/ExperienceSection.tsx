@@ -1,6 +1,6 @@
-// components/ExperienceSection.tsx
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Animate from "@/components/Animate";
+
 
 const experienceData = [
   // {
@@ -13,7 +13,7 @@ const experienceData = [
     company: "Core Digitals ",
     duration: "May 2025 - Nov 2025",
   },
-    {
+  {
     title: " Frontend Developer",
     company: "CodeAlpha",
     duration: "March 2025 - Apr 2025",
@@ -39,23 +39,26 @@ export default function ExperienceSection() {
     mb-10
     ">
 
-        <CardHeader>
-          <CardTitle className="md:text-4xl text-3xl font-bold text-center text-purple-700">
-            RROFESSIONAL EXPERIANCE
-          </CardTitle>
-        </CardHeader>
+        <Animate type="fade-up">
+          <CardHeader>
+            <CardTitle className="md:text-4xl text-3xl font-bold text-center text-purple-700">
+              RROFESSIONAL EXPERIANCE
+            </CardTitle>
+          </CardHeader>
+        </Animate>
 
         <CardContent>
           {/* === HORIZONTAL TIMELINE CONTAINER === */}
           <div className="relative overflow-x-auto pb-4 custom-scroll-timeline" >
 
             {/* --- 2. EXPERIENCE CARDS (Horizontal Flex) --- */}
+
             <div className="flex flex-nowrap items-center space-x-4 relative 
            ">
 
               {experienceData.map((exp, index) => (
 
-                <div
+                <Animate type="pop" delay={0.1}
                   key={index}
                   className="flex flex-col items-center flex-shrink-0 w-55 md:w-63 pl-2" // w-60/w-72 defines the width of each card
                 >
@@ -76,7 +79,7 @@ export default function ExperienceSection() {
                       </p>
                     </CardHeader>
                   </Card>
-                </div>
+                </Animate>
 
               ))}
             </div>

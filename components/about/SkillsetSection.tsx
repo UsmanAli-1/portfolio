@@ -4,11 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faPython, faPhp, faGitAlt, faUbuntu
-    , faAndroid, faDocker, faLinux  
+    , faAndroid, faDocker, faLinux
 } from '@fortawesome/free-brands-svg-icons';
 import {
     faDatabase, faServer, faTerminal, faCloud, faCode
-} from '@fortawesome/free-solid-svg-icons'; 
+} from '@fortawesome/free-solid-svg-icons';
+import Animate from "@/components/Animate";
+
 
 
 
@@ -19,22 +21,22 @@ const skillData = [
     { icon: faJs },
     { icon: faReact },
     // { icon: faJquery },
-    
-    
+
+
     // Backend
     { icon: faNodeJs },
     { icon: faPython },
     { icon: faPhp },
     { icon: faCode },
     { icon: faUbuntu },
-    { icon: faServer }, 
+    { icon: faServer },
 
     // Databases
-    { icon: faDatabase }, 
+    { icon: faDatabase },
 
     // Tools & Others
     { icon: faGitAlt },
-    { icon: faCloud }, 
+    { icon: faCloud },
 ];
 
 const toolUse = [
@@ -49,28 +51,32 @@ export default function SkillsetSection() {
         <>
             <Card className="w-full max-w-4xl mx-auto mt-12 border-none bg-tranparent  shadow-none">
 
-                <CardHeader>
-                    <CardTitle className="md:text-4xl text-2xl font-bold text-center text-purple-600">
-                        <strong className="text-white">Professional</strong> Skillset
-                    </CardTitle>
-                </CardHeader>
+                <Animate type="fade-up">
+                    <CardHeader>
+                        <CardTitle className="md:text-4xl text-2xl font-bold text-center text-purple-600">
+                            <strong className="text-white">Professional</strong> Skillset
+                        </CardTitle>
+                    </CardHeader>
+                </Animate>
 
                 <CardContent className="py-6">
                     {/* === SKILLS BUBBLE GRID === */}
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center ">
 
                         {skillData.map((skill, index) => (
-                            <div
-                                key={index}
-                                className="flex flex-col items-center justify-center p-4 
+                            <Animate key={index} type="pop" delay={0.2}>
+                                <div
+
+                                    className="flex flex-col items-center justify-center p-4 
                                        w-20 h-20 rounded-full bg-slate-950 border border-gray-600 
                                        shadow-md transition hover:scale-105 hover:bg-gray-900/40 duration-200"
-                            >
-                                <FontAwesomeIcon
-                                    icon={skill.icon}
-                                    className={`text-4xl mb-2 text-white`}
-                                />
-                            </div>
+                                >
+                                    <FontAwesomeIcon
+                                        icon={skill.icon}
+                                        className={`text-4xl mb-2 text-white`}
+                                    />
+                                </div>
+                            </Animate>
                         ))}
 
                     </div>
@@ -79,12 +85,14 @@ export default function SkillsetSection() {
             </Card>
 
             <Card className="w-full max-w-4xl mx-auto border-none bg-transparent mb-10 shadow-none">
+                <Animate type="fade-up">
+                    <CardHeader>
+                        <CardTitle className="text-4xl font-bold text-center text-purple-600">
+                            Tools <strong className="text-white">I use</strong>
+                        </CardTitle>
+                    </CardHeader>
+                </Animate>
 
-                <CardHeader>
-                    <CardTitle className="text-4xl font-bold text-center text-purple-600">
-                        Tools <strong className="text-white">I use</strong>
-                    </CardTitle>
-                </CardHeader>
 
                 <CardContent className="py-6">
 
@@ -97,9 +105,10 @@ export default function SkillsetSection() {
             "
                     >
                         {toolUse.map((skill, index) => (
-                            <div
-                                key={index}
-                                className="
+                            <Animate key={index} type="pop" delay={0.2}>
+                                <div
+
+                                    className="
                         flex flex-col items-center justify-center 
                         p-4  
                         w-20 h-20 sm:w-20 sm:h-20
@@ -108,17 +117,18 @@ export default function SkillsetSection() {
                         shadow-md 
                         transition hover:scale-105 hover:bg-gray-900/40 duration-200
                     "
-                            >
-                                <FontAwesomeIcon
-                                    icon={skill.icon}
-                                    className="text-3xl sm:text-4xl mb-2 text-white"
-                                />
-                            </div>
+                                >
+                                    <FontAwesomeIcon
+                                        icon={skill.icon}
+                                        className="text-3xl sm:text-4xl mb-2 text-white"
+                                    />
+                                </div>
+                            </Animate>
                         ))}
                     </div>
 
                 </CardContent>
-            </Card>
+            </Card >
 
         </>
     );

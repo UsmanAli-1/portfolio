@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import Animate from "@/components/Animate";
 
 
 
@@ -19,7 +20,7 @@ export default function ProjectsGrid() {
             title: "Wearify FYP (In Process)",
             description: "A Virtual try-on project , user can signup & signin and get free 120 points , 40 points per image generate , Authentication & Authorization is done ...",
             image: "/images/projects/werify2.png",
-            tech: ["MENN", "Shadcn", "Python", "Vercel" , "render"],
+            tech: ["MENN", "Shadcn", "Python", "Vercel", "render"],
             link: "https://wearify-mu.vercel.app/",
             video: null,
         },
@@ -100,54 +101,56 @@ export default function ProjectsGrid() {
                 {/* Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
                     {projects.map((proj, i) => (
-                        <Card key={i} className="bg-[#0F172B] backdrop-blur-xl text-white border-white/20 shadow-xl py-0 pb-4 
+                        <Animate key={i} type="fade-up">
+                            <Card  className="bg-[#0F172B] backdrop-blur-xl text-white border-white/20 shadow-xl py-0 pb-4 
                          transform transition-all duration-300 hover:-translate-y-4
                         ">
 
-                            {/* Image */}
-                            <div className="relative w-full h-47 hover:color-white/20">
-                                <Image
-                                    src={proj.image}
-                                    alt={proj.title}
-                                    fill
-                                    className="object-cover rounded-t-lg"
-                                />
-                                <div className="absolute inset-0  hover:bg-black/50 transition-all duration-300 rounded-t-lg"></div>
-                            </div>
+                                {/* Image */}
+                                <div className="relative w-full h-47 hover:color-white/20">
+                                    <Image
+                                        src={proj.image}
+                                        alt={proj.title}
+                                        fill
+                                        className="object-cover rounded-t-lg"
+                                    />
+                                    <div className="absolute inset-0  hover:bg-black/50 transition-all duration-300 rounded-t-lg"></div>
+                                </div>
 
-                            <CardHeader className="min-h-[100px]">
-                                <CardTitle className="text-white text-lg ">{proj.title}</CardTitle>
-                                <CardDescription className="text-gray-300">
-                                    {proj.description}
-                                </CardDescription>
-                            </CardHeader>
+                                <CardHeader className="min-h-[100px]">
+                                    <CardTitle className="text-white text-lg ">{proj.title}</CardTitle>
+                                    <CardDescription className="text-gray-300">
+                                        {proj.description}
+                                    </CardDescription>
+                                </CardHeader>
 
-                            <CardContent className="flex flex-wrap gap-2 ">
-                                {proj.tech.map((t, idx) => (
-                                    <Badge key={idx} variant="secondary" className="bg-white/10 text-white rounded-md hover:bg-white/20">
-                                        {t}
-                                    </Badge>
-                                ))}
-                            </CardContent>
+                                <CardContent className="flex flex-wrap gap-2 ">
+                                    {proj.tech.map((t, idx) => (
+                                        <Badge key={idx} variant="secondary" className="bg-white/10 text-white rounded-md hover:bg-white/20">
+                                            {t}
+                                        </Badge>
+                                    ))}
+                                </CardContent>
 
-                            <CardFooter>
-                                <Button
-                                    className="w-full bg-gradient-to-r from-purple-500/60 to-blue-600/90 hover:bg-purple-700 text-black/60 my-2
+                                <CardFooter>
+                                    <Button
+                                        className="w-full bg-gradient-to-r from-purple-500/60 to-blue-600/90 hover:bg-purple-700 text-black/60 my-2
       transform transition-all duration-300 hover:scale-105"
-                                    onClick={() => {
-                                        if (proj.link) {
-                                            window.open(proj.link, "_blank");
-                                        } else if (proj.video) {
-                                            setOpenVideo(proj.video);
-                                        }
-                                    }}
-                                >
-                                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="w-4 mr-2" />
-                                    {proj.link ? "Live Demo" : "Watch Demo"}
-                                </Button>
-                            </CardFooter>
+                                        onClick={() => {
+                                            if (proj.link) {
+                                                window.open(proj.link, "_blank");
+                                            } else if (proj.video) {
+                                                setOpenVideo(proj.video);
+                                            }
+                                        }}
+                                    >
+                                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="w-4 mr-2" />
+                                        {proj.link ? "Live Demo" : "Watch Demo"}
+                                    </Button>
+                                </CardFooter>
 
-                        </Card>
+                            </Card>
+                        </Animate>
                     ))}
                 </div>
             </div>

@@ -1,6 +1,8 @@
 "use client"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import Animate from "@/components/Animate";
+
 
 export default function ImageTextSection() {
     return (
@@ -20,10 +22,16 @@ export default function ImageTextSection() {
                     {/* 1. TEXT (LEFT SIDE) */}
                     <div className="w-full md:w-1/2 text-left mb-10 ">
                         <div className="space-y-1">
-                            <p className="text-3xl md:text-4xl font-bold mb-0 text-white">Hi There! 👋</p>
-                            <h1 className="text-4xl  md:text-5xl font-semibold mt-0 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">I AM USMAN <br></br>ALI</h1>
+                            <Animate type="slide-left" >
+                                <p className="text-3xl md:text-4xl font-bold mb-0 text-white">Hi There! 👋</p>
+                            </Animate>
+                            <Animate type="slide-right" >
+                                <h1 className="text-4xl  md:text-5xl font-semibold mt-0 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">I AM USMAN <br></br>ALI</h1>
+                            </Animate>
                         </div>
-                        <h4 className="text-2xl md:text-3xl font-semibold mt-2 md:mt-4 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">Software Engineer </h4>
+                        <Animate type="fade-up" >
+                            <h4 className="text-2xl md:text-3xl font-semibold mt-2 md:mt-4 bg-gradient-to-r from-purple-400/70 to-blue-600/90 bg-clip-text text-transparent">Software Engineer </h4>
+                        </Animate>
                     </div>
 
                     {/* 2. IMAGE (RIGHT SIDE) */}
