@@ -19,7 +19,7 @@ export default function CenteredIntroAndJourney() {
                             Hi Everyone, I am <strong><i>Usman Ali</i></strong> from Karachi, Pakistan.
                         </p>
                         <p className="text-lg text-center text-white">
-                            A <strong><i>Computer Science graduate</i></strong> from Iqra University at Karachi.
+                            A <strong><i>Computer Science "last semester" student</i></strong> at Iqra University Karachi.
                         </p>
                         <p className="text-lg text-center text-white">
                             I am currently seeking new opportunities in the tech industry.

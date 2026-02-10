@@ -89,14 +89,6 @@ export default function ProjectsGrid() {
             link: "https://musicplayer-spotify-clone.web.app",
             video: null,
         },
-        {
-            title: "Image Gallery",
-            description: "responsive image gallery practice project displaying images with modern UI. Built using HTML, CSS, mediaquery, and JavaScript.",
-            image: "/images/projects/Gallery.png",
-            tech: ["Html", "Css", "Javascript"],
-            link: "https://imagegalleryweb.web.app/",
-            video: null,
-        },
 
     ];
 
